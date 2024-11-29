@@ -623,6 +623,10 @@ input[type="number"] {
   transform: scaleY(24.5) scaleX(9);
 }
 
+.backgroundColor {
+  background-color: rgba(51, 51, 51, 0.5);
+}
+
 /* responsive */
 @media (max-width: 530px) {
   .max-513-center {

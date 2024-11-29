@@ -11,6 +11,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { useGetPostListQuery } from "@/apis/postApi";
 import { PostInfo } from "@/types/post.types";
+import { ButtonCustom } from "@/components/ui/button";
+import mainProduct from "@/assets/images/products/main-product.png";
 
 const PostHome = () => {
   const { Meta } = Card;
@@ -20,117 +22,60 @@ const PostHome = () => {
   });
 
   return (
-    <section className="container mx-auto my-32 text-center">
-      <div className="relative mt-20">
-        <h3 className="text-center text-3xl font-bold text-primary lg:text-4xl">
-          Tin tức
-        </h3>
-        <div className="absolute -bottom-6 left-1/2 -translate-x-1/2">
-          <div className="mt-2 flex w-[100px] items-center justify-center">
-            <span className="h-px flex-grow bg-gray-300"></span>
-            <span className="mx-2 text-gray-500">&#x2766;</span>
-            <span className="h-px flex-grow bg-gray-300"></span>
+    <section className="container mx-auto my-32">
+      <section className="relative mt-20">
+        <section className="relative grid grid-cols-3 gap-7">
+          <section className="col-span-1">
+            <Image
+              height={3000}
+              width={3000}
+              quality={100}
+              src={
+                "https://media.discordapp.net/attachments/1084829266581147658/1312094364805234838/588a7ec1-3637-4051-aee1-1dcd76dc145b.jpg?ex=674b3e9a&is=6749ed1a&hm=1f0e970a72211cafa12e6ae643fe6397c7d822750d7c37184b83cb823b3f9142&=&format=webp&width=732&height=488"
+              }
+              className="h-[400px] w-full rounded-md object-cover"
+              alt="main product"
+            />
+          </section>
+          <section className="col-span-2 justify-start">
+            <div className="flex flex-col gap-5">
+              <div className="pt-5 leading-5">
+                <p className="text-3xl font-semibold uppercase text-primary">
+                  Màng bọc thực phẩm Chitosan
+                </p>
+                <p className="text-lg">100cm x 30cm hoặc 500cm x 30cm</p>
+              </div>
+              <p>
+                <span className="font-semibold text-primary">
+                  Màng Bọc Thực Phẩm Chitosan
+                </span>{" "}
+                là sản phẩm giúp bảo quản thực phẩm có thể được sử dụng linh
+                hoạt với mọi hình dáng, kích thước của vật cần bảo quản. Nó tạo
+                ra một màng mỏng cách ly sự tiếp xúc giữa thực phẩm với bụi,
+                nước - tác nhân gây giảm thời hạn sử dụng của thực phẩm. Ngoài
+                ra, màng bọc bảo quản thức ăn làm từ nhiên liệu với{" "}
+                <span className="font-semibold text-primary">
+                  KHẢ NĂNG PHÂN HỦY
+                </span>{" "}
+                của Chitosan hiệu quả gấp 2 - 3 lần màng bọc thực phẩm bình
+                thường
+              </p>
+            </div>
+          </section>
+          <div className="absolute bottom-5 right-0">
+            <button
+              type="submit"
+              className="button-hire__custom !w-56 rounded-md border border-primary border-transparent !py-4 text-lg font-normal uppercase hover:border hover:font-bold hover:text-primary"
+            >
+              Trải nghiệm ngay
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
           </div>
-        </div>
-      </div>
-
-      <div className="my-10 flex justify-center">
-        <Swiper
-          freeMode={true}
-          pagination={{
-            clickable: true,
-          }}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          breakpoints={{
-            320: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
-            640: {
-              slidesPerView: 1,
-              spaceBetween: 5,
-            },
-            900: {
-              slidesPerView: 2,
-              spaceBetween: 5,
-            },
-            1150: {
-              slidesPerView: 3,
-              spaceBetween: 5,
-            },
-            1600: {
-              slidesPerView: 3,
-              spaceBetween: 5,
-            },
-            2000: {
-              slidesPerView: 3,
-              spaceBetween: 20,
-            },
-            2400: {
-              slidesPerView: 3,
-              spaceBetween: 30,
-            },
-            3300: {
-              slidesPerView: 4,
-              spaceBetween: 30,
-            },
-          }}
-          modules={[FreeMode, Pagination, Autoplay]}
-          className="mySwiper h-[450px] overflow-hidden transition-all duration-500"
-        >
-          {isLoading
-            ? Array.from({ length: 6 }).map((_, index) => (
-                <SwiperSlide
-                  key={index}
-                  className="flex h-[400px] w-[350px] justify-center"
-                >
-                  <div className="my-3 mr-4 rounded-lg border-[0.2px] border-[#e6e6e6] p-5">
-                    <Skeleton active paragraph={{ rows: 3 }} />
-                  </div>
-                </SwiperSlide>
-              ))
-            : data?.length > 0 &&
-              data.map((post: PostInfo, index: number) => (
-                <SwiperSlide
-                  key={index}
-                  className="flex h-[400px] w-[350px] justify-center"
-                >
-                  <Link
-                    href={`/post/${post?.id}`}
-                    className="transition-all duration-500"
-                  >
-                    <Card
-                      hoverable
-                      className="mx-auto h-[400px] w-[350px] overflow-hidden border-2"
-                      cover={
-                        <Image
-                          alt="error"
-                          height={1000}
-                          width={1000}
-                          quality={100}
-                          src={post.image}
-                          className="h-[300px] w-full object-cover"
-                        />
-                      }
-                    >
-                      <Meta
-                        description={
-                          <>
-                            <h2 className="block text-sm font-semibold text-[black]">
-                              {post.title}
-                            </h2>
-                          </>
-                        }
-                      />
-                    </Card>
-                  </Link>
-                </SwiperSlide>
-              ))}
-        </Swiper>
-      </div>
+        </section>
+      </section>
     </section>
   );
 };

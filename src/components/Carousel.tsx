@@ -1,6 +1,6 @@
 import React from "react";
 import { Carousel } from "antd";
-import slide_1 from "@/assets/images/slides/slide_1.jpg";
+import slide_1 from "@/assets/images/slides/slide_1.png";
 import slide_2 from "@/assets/images/slides/slide_2.jpg";
 import slide_3 from "@/assets/images/slides/slide_3.jpg";
 import ImageSliderCustom from "./common/ImageSliderCustom";

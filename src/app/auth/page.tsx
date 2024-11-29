@@ -2,32 +2,32 @@ import { Metadata } from "next";
 import LoginForm from "./login/LoginForm";
 import { Carousel } from "@/components";
 
-export const metadata: Metadata = {
-  title: "Fricks | Xác thực",
-  description:
-    "Đăng nhập hoặc đăng ký tài khoản để mua sắm các sản phẩm vật liệu xây dựng chất lượng cao tại Fricks.",
-  keywords: [
-    "đăng nhập",
-    "đăng ký",
-    "tài khoản",
-    "Fricks",
-    "vật liệu xây dựng",
-  ],
-  openGraph: {
-    title: "Fricks | Xác thực",
-    description:
-      "Truy cập tài khoản Fricks để xem đơn hàng và mua sắm dễ dàng các sản phẩm vật liệu xây dựng.",
-    url: "https://www.frickshop.site/auth",
-    images: [
-      {
-        url: "https://firebasestorage.googleapis.com/v0/b/exe201-9459a.appspot.com/o/Fricks%2Fauth_image.png?alt=media",
-        width: 1200,
-        height: 630,
-        alt: "Fricks | Xác thực",
-      },
-    ],
-  },
-};
+// export const metadata: Metadata = {
+//   title: "Fricks | Xác thực",
+//   description:
+//     "Đăng nhập hoặc đăng ký tài khoản để mua sắm các sản phẩm vật liệu xây dựng chất lượng cao tại Fricks.",
+//   keywords: [
+//     "đăng nhập",
+//     "đăng ký",
+//     "tài khoản",
+//     "Fricks",
+//     "vật liệu xây dựng",
+//   ],
+//   openGraph: {
+//     title: "Fricks | Xác thực",
+//     description:
+//       "Truy cập tài khoản Fricks để xem đơn hàng và mua sắm dễ dàng các sản phẩm vật liệu xây dựng.",
+//     url: "https://www.frickshop.site/auth",
+//     images: [
+//       {
+//         url: "https://firebasestorage.googleapis.com/v0/b/exe201-9459a.appspot.com/o/Fricks%2Fauth_image.png?alt=media",
+//         width: 1200,
+//         height: 630,
+//         alt: "Fricks | Xác thực",
+//       },
+//     ],
+//   },
+// };
 
 const AuthPage = () => {
   return (

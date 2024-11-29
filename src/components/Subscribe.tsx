@@ -3,6 +3,7 @@ import { Form, Input } from "antd";
 import { FaRegPaperPlane } from "react-icons/fa6";
 import { notify } from "./common/Notification";
 import { ButtonCustom } from "./ui/button";
+import { InputCustom } from "./ui/input";
 
 const Subscribe = () => {
   const [form] = Form.useForm();
@@ -15,8 +16,8 @@ const Subscribe = () => {
 
   return (
     <section className="mt-10">
-      <div className="relative h-[50vh] max-h-[992px] min-h-[100px] overflow-hidden bg-[url('https://cdn.pixabay.com/photo/2017/02/15/07/42/brick-walls-2067815_1280.jpg')] bg-cover bg-center transition-all duration-500 lg:h-[400px]">
-        <div className="container absolute inset-0 mx-auto flex items-center justify-center lg:translate-x-52">
+      <div className="relative h-[50vh] max-h-[992px] min-h-[100px] w-full overflow-hidden bg-[url('https://media.discordapp.net/attachments/1084829266581147658/1312088874750709943/bg-email.jpg?ex=674b397d&is=6749e7fd&hm=5993596572ea33ecf8a56965ce6e53d512164d32ddee8a4c4ce049f0dcf48edc&=&format=webp&width=1058&height=367')] bg-cover bg-center transition-all duration-500 lg:h-[300px]">
+        {/* <div className="container absolute inset-0 mx-auto flex items-center justify-center lg:translate-x-52">
           <div className="my-5 flex h-[50vh] max-h-[300px] w-[90vw] max-w-[600px] flex-col justify-center overflow-hidden border-4 border-white bg-white/60 p-10 transition-all duration-500">
             <h1 className="text-3xl font-extrabold text-primary md:text-5xl">
               ĐĂNG KÝ
@@ -45,6 +46,35 @@ const Subscribe = () => {
                 </Form.Item>
               </Form>
             </div>
+          </div>
+        </div> */}
+        {/* <div className="absolute inset-0 bg-black opacity-40" /> */}
+
+        <div className="container absolute inset-0 mx-auto mb-[30px] mt-[30px] flex w-full items-center gap-5">
+          {/* <div className="absolute inset-0 bg-black opacity-40" /> */}
+
+          <div className="mx-10 flex-1 text-black">
+            <div className="flex flex-col gap-2">
+              <h2 className="text-3xl font-bold">ĐĂNG KÍ NHẬN THÔNG TIN</h2>
+              <p className="w-[80%]">
+                Để lại địa chỉ email và chúng tôi sẽ liên hệ với bạn khi có
+                thông tin mới
+              </p>
+            </div>
+          </div>
+
+          <div className="flex w-full flex-1">
+            <Input
+              type="mail"
+              className="w-full rounded-none border-transparent py-4 transition-all duration-500 hover:!border-primary focus:!border-primary"
+              placeholder="Địa chỉ email của bạn"
+            />
+            <ButtonCustom
+              className="h-14 rounded-none text-lg font-medium text-white"
+              onClick={handleSubmit}
+            >
+              ĐĂNG KÝ
+            </ButtonCustom>
           </div>
         </div>
       </div>

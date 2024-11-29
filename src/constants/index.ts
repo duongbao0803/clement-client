@@ -1,27 +1,27 @@
 export const NavElements = [
   {
-    name: "Trang chủ",
+    name: "TRANG CHỦ",
     path: "/",
   },
   {
-    name: "Sản phẩm",
-    path: "/product",
+    name: "GIỚI THIỆU",
+    path: "#",
   },
   {
-    name: "Bài viết",
-    path: "/post",
+    name: "SẢN PHẨM",
+    path: "#",
   },
   {
-    name: "Liên hệ",
+    name: "VỀ CHÚNG TÔI",
     path: "/contact",
   },
 ];
 
-import Intro_1 from "@/assets/images/intro/intro_1.webp";
-import Intro_2 from "@/assets/images/intro/intro_2.jpg";
-import Intro_3 from "@/assets/images/intro/intro_3.jpg";
-import Intro_4 from "@/assets/images/intro/intro_4.jpg";
-import Intro_5 from "@/assets/images/intro/intro_5.webp";
+import Intro_1 from "@/assets/images/products/pic3.png";
+import Intro_2 from "@/assets/images/products/pic4.png";
+import Intro_3 from "@/assets/images/products/pic5.png";
+import Intro_4 from "@/assets/images/products/pic6.png";
+import Intro_5 from "@/assets/images/products/pic7.png";
 
 export const introImages = [
   { src: Intro_1, alt: "Intro Image 1" },
@@ -77,5 +77,5 @@ export const ADDRESS_OPTIONS = [
   { label: "An Khánh", value: "ward_31" },
   { label: "An Lợi Đông", value: "ward_32" },
   { label: "An Phú", value: "ward_33" },
-   { label: "Tân Phú", value: "ward_34" },
+  { label: "Tân Phú", value: "ward_34" },
 ];

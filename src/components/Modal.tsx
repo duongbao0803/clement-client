@@ -11,7 +11,7 @@ const ModalCustom: React.FC = () => {
 
   return (
     <Modal
-      title={<p className="text-xl font-bold text-[red]">Thông báo</p>}
+      title={<p className="text-xl font-bold text-primary">Thông báo</p>}
       open={isOpen}
       onCancel={() => setIsOpen(false)}
       okText="Xác nhận"
@@ -29,12 +29,12 @@ const ModalCustom: React.FC = () => {
     >
       <i className="font-semibold">
         <p className="mb-3">
-          Đây là dự án của sinh viên trường Đại học FPT TP.HCM, được thực hiện
+          Đây là dự án của học sinh trường THPT Ernst Thalmann, được thực hiện
           với mục đích phục vụ cộng đồng và học hỏi kinh nghiệm thực tế.
         </p>
         <p className="mb-3">
           Vì lý do đó, dự án hiện chỉ phục vụ cho khách hàng ở khu vực Thành phố
-          Thủ Đức, TP.HCM. Chúng tôi mong nhận được sự ủng hộ và phản hồi từ quý
+          Hồ Chí Minh. Chúng tôi mong nhận được sự ủng hộ và phản hồi từ quý
           khách hàng tại khu vực này để dự án có thể phát triển và hoàn thiện
           hơn.
         </p>

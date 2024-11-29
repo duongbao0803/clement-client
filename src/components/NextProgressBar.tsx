@@ -4,12 +4,11 @@ import resolveConfig from "tailwindcss/resolveConfig";
 import tailwindConfig from "../../tailwind.config";
 
 const fullConfig = resolveConfig(tailwindConfig);
-const secondaryColor = fullConfig.theme.colors.orange[600];
 
 const NextProgressBar = () => {
   return (
     <NextTopLoader
-      color={secondaryColor}
+      color={"#81B03F"}
       initialPosition={0.08}
       crawlSpeed={10}
       height={4}

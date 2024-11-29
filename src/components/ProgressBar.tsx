@@ -19,11 +19,4 @@ const ProgressBar = () => {
   );
 };
 
-// position: fixed;
-// bottom: 0;
-// left: 0;
-// right: 0;
-// height: 6px;
-// background: #198ab6;
-// transform-origin: 0%;
 export default ProgressBar;

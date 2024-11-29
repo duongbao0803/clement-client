@@ -16,7 +16,7 @@ const Map = () => {
         </div>
       )}
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.609941530492!2d106.80730807486965!3d10.84113285799728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752731176b07b1%3A0xb752b24b379bae5e!2sFPT%20University%20HCMC!5e0!3m2!1sen!2s!4v1718182126450!5m2!1sen!2s"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.557603603402!2d106.6957963!3d10.7685382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3e407587a1%3A0x9f3e2f5b469e6de7!2zVHLGsOG7nW5nIFRIUFQgRXJuc3QgVGjDpGxtYW5u!5e0!3m2!1svi!2s!4v1732890670248!5m2!1svi!2s"
         loading="lazy"
         width="100%"
         height="400"

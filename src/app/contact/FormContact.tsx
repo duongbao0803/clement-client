@@ -17,30 +17,30 @@ const FormContact = () => {
   const Contacts = [
     {
       icon: <FaPhoneAlt />,
-      text: "(+84) 909 251 504",
+      text: "(+84) 767 517 628",
     },
     {
       icon: <FaEarthAfrica />,
-      text: "https://www.frickshop.site",
+      text: "https://www.greenfuture.site",
     },
     {
       icon: <FaMapMarkerAlt />,
-      text: "Đường D1, Đ. D1, Long Thạnh Mỹ, TP.Thủ Đức",
+      text: "Trần Hưng Đạo, Phường Phạm Ngũ Lão, Quận 1, Hồ Chí Minh",
     },
   ];
 
   const ContactsIcon = [
     {
       icon: <FaFacebookF size={18} />,
-      url: "https://www.facebook.com/Fricks.BuildingService",
+      url: "https://www.facebook.com/profile.php?id=61569935183490",
     },
-    {
-      icon: <AiFillInstagram size={20} />,
-      url: "https://www.instagram.com/fricks1909/",
-    },
+    // {
+    //   icon: <AiFillInstagram size={20} />,
+    //   url: "https://www.instagram.com/fricks1909/",
+    // },
     {
       icon: <IoMdMail size={20} />,
-      url: "mailto:fricks.customerservice@gmail.com",
+      url: "mailto:greenfuture076@gmail.com",
     },
   ];
 

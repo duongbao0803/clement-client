@@ -21,6 +21,7 @@ import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import useAddToCart from "./hooks/useAddToCart";
+import intro from "@/assets/images/intro/intro.png";
 
 const ProductHome = () => {
   const { userInfo } = useUserInfo();
@@ -111,19 +112,68 @@ const ProductHome = () => {
 
   return (
     <section className="container mx-auto">
-      <div className="relative mt-28">
+      <div className="relative mb-44 mt-12">
         <h3 className="text-center text-3xl font-bold text-primary lg:text-4xl">
-          Sản phẩm VLXD
+          Đặc điểm nổi bật
         </h3>
-        <div className="absolute -bottom-6 left-1/2 -translate-x-1/2">
-          <div className="mt-2 flex w-[200px] items-center justify-center">
-            <span className="h-px flex-grow bg-gray-300"></span>
-            <span className="mx-2 text-gray-500">&#x2766;</span>
-            <span className="h-px flex-grow bg-gray-300"></span>
+        <div className="relative my-20">
+          <div className="flex justify-between gap-2">
+            <div className="flex flex-1 flex-col justify-between text-right">
+              <div className="mb-10">
+                <p className="text-xl font-semibold text-primary">
+                  Tính an toàn
+                </p>
+                <p className="text-sm">
+                  Sản phẩm đã được kiểm tra, thí nghiệm thực tế, an toàn cho
+                  người tiêu dùng hàng ngày.
+                </p>
+              </div>
+              <div className="bottom-0 text-right">
+                <p className="text-xl font-semibold text-primary">
+                  Ưu điểm nổi bật
+                </p>
+                <p className="text-sm">
+                  Màng bọc sau khi sử dụng có thể tự phân hủy, nhằm bảo vệ môi
+                  trường, tạo sự an tâm cho người dùng về môi trường xanh.
+                </p>
+              </div>
+            </div>
+            <div className="flex-2">
+              <Image
+                height={3000}
+                width={3000}
+                quality={100}
+                src={intro}
+                className="h-full w-[600px]"
+                alt="Product Image"
+              />
+            </div>
+
+            <div className="flex flex-1 flex-col justify-between text-left">
+              <div className="">
+                <p className="text-xl font-semibold text-primary">Tiện ích</p>
+                <p className="text-sm">
+                  Có tính kháng khuẩn cao hơn các loại màng bọc PE thông thường.
+                </p>
+              </div>
+              <div className="bottom-0 text-left">
+                <p className="text-xl font-semibold text-primary">
+                  Tại sao nên chọn Chitosan
+                </p>
+                <p className="text-sm">
+                  Làm từ nhiên liệu với{" "}
+                  <span className="font-semibold text-primary">
+                    KHẢ NĂNG TỰ PHÂN HỦY
+                  </span>{" "}
+                  của Chitosan hiệu quả gấp 2 - 3 lần màng bọc thực phẩm bình
+                  thường. 
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div className="mx-auto mt-20 max-w-[700px]">
+      {/* <div className="mx-auto mt-20 max-w-[700px]">
         <div className="scroll relative flex flex-nowrap space-x-2 overflow-x-scroll px-2">
           <div
             ref={indicatorRef}
@@ -140,8 +190,8 @@ const ProductHome = () => {
             </div>
           ))}
         </div>
-      </div>
-      <div className="mx-auto mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      </div> */}
+      {/* <div className="mx-auto mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {productData && productData?.items?.length > 0
           ? productData?.items
               ?.slice(0, 8)
@@ -222,9 +272,9 @@ const ProductHome = () => {
                 <Skeleton loading={true} active />
               </div>
             ))}
-      </div>
+      </div> */}
 
-      {productData && productData?.items?.length > 0 && (
+      {/* {productData && productData?.items?.length > 0 && (
         <div className="my-7 flex justify-center">
           <button
             onClick={() => router.push("/product")}
@@ -238,7 +288,7 @@ const ProductHome = () => {
             <span></span>
           </button>
         </div>
-      )}
+      )} */}
     </section>
   );
 };
