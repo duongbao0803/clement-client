@@ -16,7 +16,7 @@ const Subscribe = () => {
 
   return (
     <section className="mt-10">
-      <div className="relative h-[50vh] max-h-[992px] min-h-[100px] w-full overflow-hidden bg-[url('https://media.discordapp.net/attachments/1084829266581147658/1312088874750709943/bg-email.jpg?ex=674b397d&is=6749e7fd&hm=5993596572ea33ecf8a56965ce6e53d512164d32ddee8a4c4ce049f0dcf48edc&=&format=webp&width=1058&height=367')] bg-cover bg-center transition-all duration-500 lg:h-[300px]">
+      <div className="relative h-[50vh] max-h-[992px] min-h-[100px] w-full overflow-hidden bg-[url('https://firebasestorage.googleapis.com/v0/b/exe201-9459a.appspot.com/o/Fricks%2Fbg-email.jpg?alt=media&token=37ee6d60-6898-41f5-b39b-d3c3cd34736c')] bg-cover bg-center transition-all duration-500 lg:h-[300px]">
         {/* <div className="container absolute inset-0 mx-auto flex items-center justify-center lg:translate-x-52">
           <div className="my-5 flex h-[50vh] max-h-[300px] w-[90vw] max-w-[600px] flex-col justify-center overflow-hidden border-4 border-white bg-white/60 p-10 transition-all duration-500">
             <h1 className="text-3xl font-extrabold text-primary md:text-5xl">

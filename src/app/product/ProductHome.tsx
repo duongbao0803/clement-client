@@ -158,15 +158,15 @@ const ProductHome = () => {
               </div>
               <div className="bottom-0 text-left">
                 <p className="text-xl font-semibold text-primary">
-                  Tại sao nên chọn Chitosan
+                  Tại sao nên chọn Agar & Tinh bột bắp
                 </p>
                 <p className="text-sm">
                   Làm từ nhiên liệu với{" "}
                   <span className="font-semibold text-primary">
                     KHẢ NĂNG TỰ PHÂN HỦY
                   </span>{" "}
-                  của Chitosan hiệu quả gấp 2 - 3 lần màng bọc thực phẩm bình
-                  thường. 
+                  của Agar & Tinh bột bắp hiệu quả gấp 2 - 3 lần màng bọc thực phẩm bình
+                  thường.
                 </p>
               </div>
             </div>
